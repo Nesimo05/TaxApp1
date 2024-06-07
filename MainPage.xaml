@@ -1,0 +1,15 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TaxApp1.MainPage">
+    <StackLayout Padding="10">
+        <Entry x:Name="AmountEntry" Placeholder="Betrag eingeben" Keyboard="Numeric"/>
+        <Picker x:Name="TypePicker">
+            <Picker.Items>
+                <x:String>Bruttobetrag</x:String>
+                <x:String>Nettobetrag</x:String>
+            </Picker.Items>
+        </Picker>
+        <Entry x:Name="TaxRateEntry" Placeholder="Steuersatz (%)" Keyboard="Numeric"/>
+        <Button Text="Berechnen" Clicked="OnCalculateButtonClicked"/>
+    </StackLayout>
+</ContentPage>
